@@ -1,5 +1,5 @@
 #!/bin/bash -e
 CONFIG_PATH=/data/options.json
-export http_proxy="$(jq --raw-output '.http_proxy // empty' $CONFIG_PATH)"
+export HTTP_PROXY="$(jq --raw-output '.http_proxy // empty' $CONFIG_PATH)"
 
 /jellyfin/jellyfin
