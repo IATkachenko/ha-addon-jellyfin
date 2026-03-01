@@ -22,3 +22,7 @@ ports_description:
   8920/tcp: Jellyfin TLS port, must be configured in the server first
 host_network: true
 image: ghcr.io/mdvorak/jellyfin-server-{arch}
+options:
+  http_proxy: ""
+schema:
+  http_proxy: str
