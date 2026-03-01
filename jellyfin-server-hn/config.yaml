@@ -21,7 +21,6 @@ ports_description:
   8096/tcp: Jellyfin web and media port
   8920/tcp: Jellyfin TLS port, must be configured in the server first
 host_network: true
-image: ghcr.io/mdvorak/jellyfin-server-{arch}
 options:
   http_proxy: null
 schema:
