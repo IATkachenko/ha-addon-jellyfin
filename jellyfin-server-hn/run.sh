@@ -1,5 +1,5 @@
-#!/usr/bin/with-contenv bashio
+#!/bin/bash -e
 CONFIG_PATH=/data/options.json
-export HTTP_PROXY="$(bashio::config 'http_proxy')"
+export HTTP_PROXY="$(jq --raw-output '.http_proxy // empty' $CONFIG_PATH)"
 
 /jellyfin/jellyfin
