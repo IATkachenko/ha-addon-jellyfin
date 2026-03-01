@@ -1,1 +1,1 @@
-../jellyfin-server/CHANGELOG.md
+
