@@ -23,6 +23,6 @@ ports_description:
 host_network: true
 image: ghcr.io/mdvorak/jellyfin-server-{arch}
 options:
-  http_proxy: ""
+  http_proxy: null
 schema:
-  http_proxy: str
+  http_proxy: "url?"
